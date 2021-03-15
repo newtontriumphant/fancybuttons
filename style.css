@@ -3,19 +3,16 @@ body {
   margin: 0;
 }
 
-.wrapper {
-  width: 100%;
+.radial-gradient {
+  position: fixed;
+  top: 0px;
+  left: 0px;
   height: 100%;
-  position: absolute;
-  background: linear-gradient(45deg,rgb(165, 15, 53), #E94584, rgb(74, 72, 207) , rgb(204, 39, 219), rgb(165, 15, 53), #E94584);
-  background-size: 600% 100%;
-  animation: gradient 8s linear infinite;
-  animation-direction: alternate;
-}
-
-@keyframes gradient {
-  0% {background-position: 0%}
-  100% {background-position: 100%}
+  width: 100%;
+  /*fallback*/
+  background: #b73cbb;
+  /*Linear gradient... */
+  background: radial-gradient(at center, #3498db, rgb(168, 7, 74));
 }
 
 h1 {
